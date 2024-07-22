@@ -1,18 +1,18 @@
 import { useEffect } from "react";
-import { OrderBookTable } from "../../components/OrderBookTable";
-import { bitMexService } from "../../structure/services/bitMex.service";
+// import { bitMexService } from "../../structure/services/bitMex.service";
 import "./HomePage.css";
+import { OrderBookRow } from "../../components/OrderBookRow";
+import { Navbar } from "../../components/shared/Navbar";
 
 export const HomePage = () => {
+  // const fetchAnnouncements = async () => {
+  //   const data = await bitMexService.getAllAnnouncement();
+  //   if (data) {
+  //     console.log(data);
+  //   }
+  // };
   useEffect(() => {
-    const fetchAnnouncements = async () => {
-      const data = await bitMexService.getAllAnnouncement();
-      if (data) {
-        console.log(data);
-      }
-    };
-
-    fetchAnnouncements();
+    // fetchAnnouncements();
   }, []);
 
   return (
@@ -20,13 +20,14 @@ export const HomePage = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        padding: "3em 0 0 3em",
-        gap: "10px",
+        gap: "3em",
       }}
     >
-      <h1 style={{ color: "white" }}>Order Book</h1>
+      <Navbar />
 
-      <OrderBookTable />
+      <h1 style={{ color: "white", padding: "0em 0 0 1.5em" }}>Order Book</h1>
+
+      <OrderBookRow />
     </div>
   );
 };

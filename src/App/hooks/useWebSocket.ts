@@ -44,7 +44,7 @@ export const useWebSocket = () => {
           // Ordenar los datos por timestamp o ID
           updatedData.sort((a, b) => b.id - a.id); // Ordenar por ID descendente
           // Limitar a los primeros 5 elementos
-          return updatedData.slice(0, 5);
+          return updatedData.slice(0, 6);
         });
       }
     };

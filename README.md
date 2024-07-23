@@ -41,5 +41,4 @@ Notas:
 <ol>
     <li>No pude consumir el web api debido a problemas de cors, asi que no pude agregar los anuncios</li>
     <li>Aunque solo hice lo de websocket, en la carpeta structure esta la logica que iba a usar para consumir el web api</li>
-    
 </ol>

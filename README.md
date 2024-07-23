@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# BitMex API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3>Tecnologias utilizadas FRONTEND:</h3> 
+React, CSS, Axios
 
-Currently, two official plugins are available:
+<h3>Informacion de lo realizado:</h3>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Incluye:
 
-## Expanding the ESLint configuration
+<ul>
+    <li>Presentación de la data de manera comprensible</li>
+    <li>Uso de subscriciones, observable y httpModule de angular</li>
+    <li>Manejo de rutas</li>
+    <li>Implementacio de servicio para concentrar la data en un solo lugar (singleton)</li>
+    <li>Manejo de diferentes modulos</li>
+    <li>Formularios reactivos con sus respectivas validaciones</li>
+</ul>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<h3>Estructura carpetas:</h3>
 
-- Configure the top-level `parserOptions` property like this:
+<ul>
+    <li>shared: Contiene los componentes que se comparten en toda la aplicacion</li>
+    <li>card/service: Donde almaceno la data y metodos que cualquier pueda acceder</li>
+    <li>card/pages: Paginas o vistas de añadir y ver las tarjetas </li>
+    <li>card/components: Distintos componentes de la aplicacion</li>
+    <li>card/layouts: Cascaron del panel</li>
+    <li>card/interfaces: donde se definen las interfaces que declaran como debe ser una tarjeta</li>
+    <li>card/pipes: pipes personalizados :( </li>
+    <li>card/Utils: Contiene Metodos reutilizables</li>
+</ul>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+<h3>Como Correr el proyecto:</h3>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Pasos:
+
+<ol>
+    <li>Descargar proyecto del link del repositorio: https://github.com/rafaeldoleo14/Card_UI.git</li>
+    <li>Installar modulos de node: npm install</li>
+    <li>Ejecutar comando modo desarrollo: (ng serve) o (npm run start)</li>
+    <li>Tiene que tener el backend corriendo para que todo funcione.</li>
+    <li>Inmediatamente lo corra en el puerto que le indique la terminar, podra ver la vista de agregar tarjeta</li>
+    <li>Luego ya puedo agregar y ver las tarjetas agregadas.</li>
+</ol>
+
+Notas:
+
+<ol>
+    <li>Les debo el responsive, puede que no se vea muy bien en algunas pantallas</li>
+    <li>hice el deploy del frontend, pero tiene que correr el backend por igual</li>
+    <li>No necesita tener Mysql instalado, estoy usando mysql de railway, el proyecto esta conectado a esa base de datos.</li>
+</ol>

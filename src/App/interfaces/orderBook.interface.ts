@@ -1,4 +1,3 @@
-// src/interfaces/orderBook.interface.ts
 export interface OrderBook {
   symbol: string;
   id: number;
@@ -6,5 +5,4 @@ export interface OrderBook {
   size: number;
   price: number;
   timestamp: Date;
-  // Añade otras propiedades relevantes según la estructura de tus datos
 }
